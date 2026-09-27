@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="kn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sorry, Tanu</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+	<style>
+		:root { --ink:#302a27; --muted:#6f625d; --red:#a6334b; --yellow:#ffd166; --blue:#70c9d9; --mint:#b9dfc5; --paper:#fffaf4; }
+		* { box-sizing:border-box; }
+		body { margin:0; min-height:100vh; color:var(--ink); font-family:"DM Sans",sans-serif; background:radial-gradient(circle at 8% 18%,#ffb5a7 0,transparent 27%),radial-gradient(circle at 92% 85%,#a9e1d0 0,transparent 28%),radial-gradient(circle at 72% 8%,#ffe08a 0,transparent 22%),#fff4df; }
+		.page { width:min(1100px,calc(100% - 40px)); min-height:100vh; margin:auto; padding:32px 0 40px; display:grid; grid-template-rows:auto 1fr auto; }
+		header,footer { display:flex; justify-content:space-between; align-items:center; }
+		header { color:var(--red); font-size:12px; font-weight:600; letter-spacing:.08em; }
+		.heart { font-size:22px; margin-right:8px; }
+		.date,footer { color:var(--muted); font-size:11px; letter-spacing:.06em; }
+		main { display:grid; grid-template-columns:minmax(260px,.9fr) minmax(360px,1.1fr); align-items:center; gap:clamp(50px,8vw,115px); padding:55px 0 65px; }
+		.eyebrow { margin:0 0 18px; color:var(--red); font-size:13px; font-weight:600; letter-spacing:.08em; }
+		h1 { margin:0; font-family:"Playfair Display",Georgia,serif; font-size:clamp(3.5rem,8vw,7rem); line-height:.92; letter-spacing:-.05em; }
+		h1 em { color:var(--red); font-style:normal; }
+		.intro p:not(.eyebrow) { max-width:390px; margin:26px 0 0; color:var(--muted); font-size:16px; line-height:1.7; }
+		.small-note { display:flex; align-items:center; gap:12px; margin-top:34px; color:var(--muted); font-size:12px; }
+		.small-note:before { content:""; width:40px; height:1px; background:var(--red); }
+		.letter { max-width:500px; margin:auto; padding:clamp(28px,5vw,54px); background:var(--paper); border-top:8px solid var(--yellow); border-right:8px solid var(--blue); box-shadow:18px 22px 0 #a6334b2b,0 18px 45px #4d2d251a; transform:rotate(1deg); }
+		.letter-top { display:flex; justify-content:space-between; margin-bottom:34px; }
+		.to { color:var(--muted); font-size:11px; letter-spacing:.12em; text-transform:uppercase; }
+		.to strong { display:block; margin-top:3px; color:var(--ink); font-family:"Playfair Display",Georgia,serif; font-size:24px; letter-spacing:0; text-transform:none; }
+		.seal { color:var(--red); font-size:27px; }
+		h2 { margin:0 0 18px; font-family:"Playfair Display",Georgia,serif; font-size:clamp(1.7rem,4vw,2.3rem); line-height:1.1; }
+		.letter p { margin:0 0 16px; color:#514944; font-size:15px; line-height:1.75; }
+		.signature { margin-top:28px; color:var(--red); font-family:"Playfair Display",Georgia,serif; font-size:19px; font-style:italic; line-height:1.35; }
+		.response { display:flex; align-items:center; gap:15px; margin-top:28px; }
+		button { border:0; padding:13px 17px; color:white; background:var(--red); font:600 12px "DM Sans",sans-serif; cursor:pointer; transition:transform .2s,background .2s; }
+		button:hover { background:#71343b; transform:translateY(-2px); }
+		button:focus-visible { outline:3px solid #91444d66; outline-offset:3px; }
+		.response-text { display:none; color:var(--red); font-size:12px; line-height:1.4; }
+		.response-text.visible { display:block; }
+		footer { padding-top:18px; border-top:1px solid #302a2724; }
+		@media (max-width:760px) { .page { width:min(100% - 32px,540px); padding-top:24px; } .date { display:none; } main { grid-template-columns:1fr; gap:45px; padding:68px 0 54px; } h1 { font-size:clamp(3.5rem,17vw,5.4rem); } .intro p:not(.eyebrow) { font-size:15px; } .letter { transform:none; box-shadow:10px 14px 0 #91444d1a,0 15px 32px #4d2d251a; } footer { line-height:1.5; } }
+	</style>
+</head>
+<body>
+	<div class="page">
+		<header><div><span class="heart" aria-hidden="true">♡</span>ನನ್ನ ಮನದ ಮಾತು</div><div class="date">ಪ್ರೀತಿಯಿಂದ ಬರೆದದ್ದು</div></header>
+		<main>
+			<section class="intro">
+				<p class="eyebrow">ನನಗೆ ತುಂಬಾ ವಿಶೇಷವಾದವಳಿಗೆ</p>
+				<h1><em>Sorry,</em><br>ತನು.</h1>
+				<p>ನಾನು ನಿನ್ನನ್ನು ನೋಯಿಸಿದ್ದೇನೆ ಎಂದು ನನಗೆ ಗೊತ್ತು. ನನ್ನನ್ನು ಕ್ಷಮಿಸು. ನಾನು ಮಾಡಿದ ತಪ್ಪಿಗೆ ನಿಜವಾಗಿಯೂ ಬೇಸರವಾಗಿದೆ.</p>
+				<div class="small-note">ನಿನಗೆ ಸಮಯ ಸಿಕ್ಕಾಗ ಇದನ್ನು ಓದು.</div>
+			</section>
+			<section aria-label="ಕ್ಷಮೆಯ ಪತ್ರ">
+				<article class="letter">
+					<div class="letter-top"><div class="to">ಇವರಿಗೆ<strong>ತನು</strong></div><div class="seal" aria-hidden="true">♥</div></div>
+					<h2>ನಿನ್ನನ್ನು ನೋಯಿಸುವುದು ನನ್ನ ಉದ್ದೇಶವಾಗಿರಲಿಲ್ಲ.</h2>
+					<p>ನಿನ್ನನ್ನು ನೋಯಿಸಿದ್ದಕ್ಕಾಗಿ ನನ್ನನ್ನು ಕ್ಷಮಿಸು. ನಾನು ಯಾವುದೇ ನೆಪ ಹೇಳುವುದಿಲ್ಲ. ನಿನ್ನ ಭಾವನೆಗಳು ನನಗೆ ತುಂಬಾ ಮುಖ್ಯ. ನಾನು ನಿನ್ನನ್ನು ಇನ್ನಷ್ಟು ಪ್ರೀತಿಯಿಂದ ನೋಡಿಕೊಳ್ಳಬೇಕಿತ್ತು.</p>
+					<p>ದಯವಿಟ್ಟು ನನ್ನನ್ನು ಕ್ಷಮಿಸು. ನಾನು ಈ ತಪ್ಪನ್ನು ಮತ್ತೆ ಮಾಡುವುದಿಲ್ಲ.</p>
+					<p>ದಯವಿಟ್ಟು ನನ್ನನ್ನು ಬಿಟ್ಟು ಹೋಗಬೇಡ. ನನ್ನ ತಪ್ಪುಗಳನ್ನು ನನಗೆ ಹೇಳು ಮತ್ತು ಅವುಗಳನ್ನು ಸರಿಪಡಿಸಿಕೊಳ್ಳಲು ನನಗೆ ಸಹಾಯ ಮಾಡು.</p>
+					<p>ಈಗಲೇ ಉತ್ತರ ಕೊಡಬೇಕೆಂಬ ಒತ್ತಡ ನಿನಗಿಲ್ಲ. ನಿನಗೆ ಬೇಕಾದಷ್ಟು ಸಮಯ ತೆಗೆದುಕೋ.</p>
+					<div class="signature">ಪ್ರೀತಿಯಿಂದ,<br>ನಿನ್ನನ್ನು ಇನ್ನಷ್ಟು ಚೆನ್ನಾಗಿ ನೋಡಿಕೊಳ್ಳಲು ಬಯಸುವವನು</div>
+					<div class="response"><button id="replyButton" type="button">ನಾನು ಓದಿದ್ದೇನೆ</button><span id="replyMessage" class="response-text" role="status">ಧನ್ಯವಾದಗಳು, ತನು. ನಿನಗೆ ಬೇಕಾದಷ್ಟು ಸಮಯ ತೆಗೆದುಕೋ.</span></div>
+				</article>
+			</section>
+		</main>
+		<footer><span>ತನುಗಾಗಿ, ಪ್ರಾಮಾಣಿಕವಾಗಿ ಮಾಡಿದ್ದು</span><span>♡</span></footer>
+	</div>
+	<script>
+		const button = document.querySelector('#replyButton');
+		const message = document.querySelector('#replyMessage');
+		button.addEventListener('click', () => { message.classList.add('visible'); button.textContent = 'ಧನ್ಯವಾದಗಳು, ತನು'; });
+	</script>
+</body>
+</html>
